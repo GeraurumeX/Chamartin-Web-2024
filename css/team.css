@@ -1,0 +1,275 @@
+:root {
+    --main-color1: #673de6;
+    --main-color2: #fc5185;
+    --main-color3: rgba(0,0,0,0.8);
+    --text-color: #2f1c6a;
+    --gerideant-color: linear-gradient(163deg, rgba(103, 61, 230, 0.9836309523809523) 23%, rgba(252, 81, 133, 1) 100%);
+    --gerdeant-color2: rgb(103, 61, 230):
+}
+
+* {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+html {
+    font-size: 62.5%; 
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+
+body {
+    /*background: var(--main-color3);*/
+    background-image: url(/assets/backgrounds/Fondo-chamartin.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}
+
+.team-box {
+    width: 100%;
+    height: 100%;
+}
+
+.team-box1 {
+    background-image: url(/assets/team/team-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-box2 {
+    background-image: url(/assets/team/team-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-box3 {
+    background-image: url(/assets/team/team-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-box4 {
+    background-image: url(/assets/team/team-4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-box5 {
+    background-image: url(/assets/team/team-5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-box6 {
+    background-image: url(/assets/team/team-6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-box7 {
+    background-image: url(/assets/team/team-7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-box8 {
+    background-image: url(/assets/team/team-8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-box9 {
+    background-image: url(/assets/team/team-9.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-name {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.team-name::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: .5s;
+    margin: auto;
+    margin-top: 40px;
+    border: 10px;
+}
+
+.team-box1 .team-name::before {
+    background-image: url(/assets/team/team-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-box2 .team-name::before {
+    background-image: url(/assets/team/team-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-box3 .team-name::before {
+    background-image: url(/assets/team/team-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-box4 .team-name::before {
+    background-image: url(/assets/team/team-4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-box5 .team-name::before {
+    background-image: url(/assets/team/team-5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-box6 .team-name::before {
+    background-image: url(/assets/team/team-6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-box7 .team-name::before {
+    background-image: url(/assets/team/team-7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-box8 .team-name::before {
+    background-image: url(/assets/team/team-8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-box9 .team-name::before {
+    background-image: url(/assets/team/team-9.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-name:hover::before {
+    width: 60%;
+    height: 60%;
+}
+
+/*.team-box1:hover .team-name::before {
+    width: 60%;
+    height: 60%;
+}*/
+
+.team-name:hover {
+    backdrop-filter: blur(10px);
+}
+
+.img {
+    width: 70%;
+    height: 50%;
+    opacity: 0;
+    z-index: 999999;
+}
+
+.team-content {
+    width: 100%;
+    height: auto;
+    margin-top: 350px;
+    opacity: 0;
+}
+
+.team-content h2 {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.team-content p {
+    font-size: 22px;
+    color: #ffffff;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+}
+.team-content i {
+    position: relative;
+    font-size: 25px;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 10px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    scale: 1.5;
+}
+
+.fa-instagram:hover {
+    scale: 1.5;
+}
+
+.fa-github:hover {
+    scale: 1.5;
+}
+
+.fa-linkedin:hover {
+    scale: 1.5;
+}
+
+.team-name:hover .team-content {
+    opacity: 1;
+}
