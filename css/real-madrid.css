@@ -1,0 +1,19 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    background: #111;
+    overflow: hidden;
+}
+
+.hero-nadal {
+    min-height: 100vh;
+    background-image: url('../assets/realMadrid/nba-plain--eb2dc99e-d1c0-4aaf-b1a7-2725ec39deff.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

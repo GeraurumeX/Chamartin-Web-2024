@@ -1,0 +1,19 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    background: #111;
+    overflow: hidden;
+}
+
+.hero-nadal {
+    min-height: 100vh;
+    background-image: url('../assets/nacional/nacional.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
