@@ -1,0 +1,8 @@
+body {
+    /*background: var(--main-color3);*/
+    background-image: url(/assets/backgrounds/Fondo-chamartin.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}

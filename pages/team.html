@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Swiper demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>CHAMARTIN</title>
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- Link Fonts -->
@@ -14,11 +14,58 @@
   <!-- Link Awesome icons -->
   <script src="https://kit.fontawesome.com/a25fd92ec4.js" crossorigin="anonymous"></script>
   <!-- Link CSS -->
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/swiper.css">
   <link rel="stylesheet" href="/css/team.css">
+  <link rel="stylesheet" href="/css/sponsors.css">
 </head>
 
 <body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="/assets/img/logo chamartin.png" alt="logo">
+            </div>
+            <nav class="menu">
+                <div class="head">
+                    <div class="logo"><img src="/assets/img/logo chamartin.png" alt="logo"></div>
+                    <button class="button close-menu-btn"></button>
+                </div>
+                <ul>
+                    <li><a href="/index.html">home</a></li>
+                    <li><a href="/pages/institucion.html">institución</a></li>
+                    <li class="dropdown">
+                        <a href="#">academias</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="/pages/rm.html"><span>fundación real madrid</span></a></li>
+                            <li><a href="/pages/all-blacks.html"><span>wings black</span></a></li>
+                            <li><a href="/pages/nadal.html"><span>clinica tenis</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">eventos</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="sub-menu sub-menu-right">
+                            <li><a href="/pages/olimpiada.html"><span>olimpiada</span></a></li>
+                            <li><a href="/pages/colonia.html"><span>colonia</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/pages/team.html">team</a></li>
+                    <li><a href="/pages/sponsors.html">sponsors</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <button type="button" class="open-menu-btn">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
     <section class="slider">
         <!-- Swiper -->
         <div class="swiper mySwiper">
@@ -181,6 +228,55 @@
         </div>
     </section>
 
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="/assets/img/logo chamartin.png" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="box logo-sponsors">
+                <h1>sponsors</h1>
+                <div class="logo-slide">
+                    <img src="/assets/logos-sponsor/sponsors/Assist-Card.png" alt="">
+                    <img src="/assets/logos-sponsor/sponsors/Prex.png" alt="">
+                    <img src="/assets/logos-sponsor/sponsors/LATIN SECURITIES.png" alt="">
+                </div>
+
+                <div class="logo-slide">
+                    <img src="/assets/logos-sponsor/sponsors/Assist-Card.png" alt="">
+                    <img src="/assets/logos-sponsor/sponsors/Prex.png" alt="">
+                    <img src="/assets/logos-sponsor/sponsors/LATIN SECURITIES.png" alt="">
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa-brands fa-facebook fa-2xl"></a>
+                    <a href="#" class="fa-brands fa-instagram fa-2xl"></a>
+                    <a href="#" class="fa-brands fa-linkedin fa-2xl"></a>
+                </div>  
+                <div class="address">
+                    <h2>Dirección</h2>
+                    <p>Av. Uruguay 589</p>
+                    <p>Montevideo, UY</p>
+                    <p>Tel.123 456 789</p>
+                    <p>Email: info@chamartin.com</p>
+                </div>      
+            </div>
+        </div>
+
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>CHAMARTIN</b> - Todos los Derechos Reservados</small>
+        </div>
+
+    </footer>
+
+
+    <script src="/js/app.js"></script>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
